@@ -21,6 +21,26 @@ namespace PlayAPI.Controllers
         {
             return new HttpResponseMessage() { StatusCode = HttpStatusCode.OK, Content = new StringContent("Hi", Encoding.Unicode) };
         }
+
+        [HttpPost]
+        public HttpStatusCode Post()
+        {
+            return HttpStatusCode.OK;
+        }
+        [HttpPost]
+        public string Post_formData([FromForm] DataTransferObject formData)
+        {
+            if (formData != null && !String.IsNullOrWhiteSpace(formData?.content))
+            {
+                var response = new HttpResponseMessage(HttpStatusCode.OK);
+                response.Headers.Add("MyHeaderMessage", "MyHeaderMessage");
+                response.Content = new StringContent(JsonConvert.SerializeObject(formData));
+                return JsonConvert.SerializeObject(response.Content.ReadAsStringAsync());
+            }
+            return $"formData is {(formData?.content == null ? "null" : "notNull")}";
+        }
+
+
         [HttpGet]
         public async Task<string> Youbike()
         {

@@ -488,11 +488,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xp123\\Desktop\\PlayAPI\\PlayAPI\\PlayAPI.csproj",
+      "projectUniqueName": "C:\\Users\\xp123\\Documents\\GitHub\\PlayAPI\\PlayAPI\\PlayAPI.csproj",
       "projectName": "PlayAPI",
-      "projectPath": "C:\\Users\\xp123\\Desktop\\PlayAPI\\PlayAPI\\PlayAPI.csproj",
+      "projectPath": "C:\\Users\\xp123\\Documents\\GitHub\\PlayAPI\\PlayAPI\\PlayAPI.csproj",
       "packagesPath": "C:\\Users\\xp123\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xp123\\Desktop\\PlayAPI\\PlayAPI\\obj\\",
+      "outputPath": "C:\\Users\\xp123\\Documents\\GitHub\\PlayAPI\\PlayAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
