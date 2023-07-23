@@ -16,6 +16,17 @@ namespace PlayAPI.Controllers
         {
             _configuration = configuration;
         }
+
+        [HttpGet]
+        public int GetNum([FromQuery] int num)
+        {
+            if (num < 0)
+            {
+                return -1;
+            }
+            return num % 2;
+        }
+
         [HttpGet]
         public HttpResponseMessage Index()
         {
